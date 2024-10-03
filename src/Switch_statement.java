@@ -7,13 +7,15 @@ public class Switch_statement {
         switch(randomNumber){
             case 10:
                 System.out.println("Ten");
-                break;
+
 
             case 9:
                 System.out.println("Nine");
 
+
             case 8:
                 System.out.println("Eight");
+
 
             case 7:
                 System.out.println("Seven");
@@ -23,8 +25,7 @@ public class Switch_statement {
 
             case 5:
                 System.out.println("Five");
-
-
+                break;
         }
 
 
