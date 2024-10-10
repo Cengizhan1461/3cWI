@@ -1,10 +1,12 @@
+package Switch_Statement;
+
 import java.util.Random;
 
-public class Switch_statement {
+public class Switch_Statement {
     public static void main(String[] args) {
         Random random = new Random();
         int randomNumber = random.nextInt(5, 10);
-        switch(randomNumber){
+        switch (randomNumber) {
             case 10:
                 System.out.println("Ten");
 
@@ -27,8 +29,5 @@ public class Switch_statement {
                 System.out.println("Five");
                 break;
         }
-
-
     }
-
 }

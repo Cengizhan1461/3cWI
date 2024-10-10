@@ -1,10 +1,12 @@
+package While_Loops;
+
 import java.util.Random;
 
 public class While_Loop {
     public static void main(String[] args) {
         Random random = new Random();
         boolean isFinished = false;
-       int sum = 0;
+        int sum = 0;
 
         while(!isFinished){
             int randomValue = random.nextInt (10, 30);

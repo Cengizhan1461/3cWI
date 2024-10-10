@@ -1,3 +1,5 @@
+package While_Loops;
+
 import java.util.Scanner;
 
 public class Bankomat {
@@ -44,6 +46,3 @@ public class Bankomat {
         }
     }
 }
-
-
-
