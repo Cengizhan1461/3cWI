@@ -17,8 +17,6 @@ public class Würfelbeispiel {
         boolean isFinished = false;
 
 
-
-
         while (!isFinished) {
             System.out.println("Willkommen zum Würfelspiel!");
             System.out.println("1: Spiel Starten");
@@ -39,8 +37,7 @@ public class Würfelbeispiel {
 
 
                 System.out.println("Ihr Gesamtergebnis ist: " + spielerSumme);
-                System.out.println("                 " +
-                        "       ");
+                System.out.println("                 " + "       ");
 
                 System.out.println("Der Computer würfelt...");
                 for (int i = 0; i < 6; i++) {
