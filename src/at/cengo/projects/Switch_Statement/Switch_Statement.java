@@ -1,4 +1,4 @@
-package Switch_Statement;
+package at.cengo.projects.Switch_Statement;
 
 import java.util.Random;
 

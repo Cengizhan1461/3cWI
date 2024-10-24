@@ -1,4 +1,4 @@
-package Strings;
+package at.cengo.projects.Strings;
 
 public class Arrays {
     public static void main(String[] args) {

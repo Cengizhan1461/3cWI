@@ -1,4 +1,4 @@
-package While_Loops;
+package at.cengo.projects.While_Loops;
 
 import java.util.Random;
 import java.util.Scanner;

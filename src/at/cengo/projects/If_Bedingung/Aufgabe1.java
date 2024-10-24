@@ -1,4 +1,4 @@
-package If_Bedingung;
+package at.cengo.projects.If_Bedingung;
 
 import java.util.Random;
 

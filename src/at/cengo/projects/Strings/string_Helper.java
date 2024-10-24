@@ -1,4 +1,4 @@
-package Strings;
+package at.cengo.projects.Strings;
 
 import java.util.ArrayList;
 import java.util.List;
