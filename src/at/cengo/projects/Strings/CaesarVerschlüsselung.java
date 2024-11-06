@@ -12,7 +12,7 @@ public class CaesarVerschlüsselung {
                 String word = scanner.next();
 
             String result = encrypt(word);
-            System.out.println(result);
+            System.out.print(result);
             break;
         }
 
@@ -28,7 +28,7 @@ public class CaesarVerschlüsselung {
 
                 System.out.println("problem");
             }
-            System.out.println(newChar);
+            System.out.print(newChar);
         }
         return String.valueOf(wordAsArray);
     }
