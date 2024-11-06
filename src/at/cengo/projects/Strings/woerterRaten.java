@@ -1,5 +1,6 @@
 package at.cengo.projects.Strings;
 
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -10,56 +11,75 @@ import static java.lang.String.valueOf;
 
 
 public class woerterRaten {
+    public static Random random = new Random();
+    public static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
-        String[] word = {"Hans", "pencil", "apple", "river", "mountain", "guitar", "chocolate", "sunflower", "computer", "ocean", "dream", "book", "elephant", "moon", "keyboard", "coffee", "rainbow", "forest", "camera", "butterfly", "zebra", "clock", "flower", "cloud"};
+        String[] words = {"Hans", "pencil", "apple"};
 
+        int randomNum = random.nextInt(words.length);
+        String word = words[randomNum].toLowerCase();  // Convert to lowercase for easier matching
+        char[] wordArr = word.toCharArray();
+        char[] guessedArr = new char[wordArr.length];
 
-        Random random = new Random();
-        Scanner scanner = new Scanner(System.in);
+        // Fill the guessed array with '*'
+        for (int i = 0; i < guessedArr.length; i++) {
+            guessedArr[i] = '*';
+        }
+
         boolean isFinished = false;
-        int randomNum = word.length;
-        List<String> foundLetters = new ArrayList<>();
-        for (int i = 0; i < word[randomNum].length(); i++) {
-            System.out.println("_ ");
-        }
 
-        System.out.println();
+        System.out.println("Willkommen zum Wort-Raten-Spiel!");
 
+        // Main game loop
         while (!isFinished) {
+            // Show the current guessed state
+            printArray(guessedArr);
 
-            String selectedLetter = scanner.next();
+            // Get user input
+            System.out.print("Welcher Buchstabe könnte im gesuchten Wort stecken? ");
+            char guess = scanner.nextLine().toLowerCase().charAt(0);
 
-            if (containsLetter(word[randomNum], selectedLetter)) {
-                foundLetters.add(selectedLetter);
+            // Check if the guessed letter is in the word
+            boolean found = false;
+            for (int i = 0; i < wordArr.length; i++) {
+                if (wordArr[i] == guess) {
+                    guessedArr[i] = guess;
+                    found = true;
+                }
             }
-            printHiddenWord(word[randomNum], foundLetters);
-        }
-    }
 
-
-    public static boolean containsLetter(String word, String letter) {
-        for (int i = 0; i < word.length(); i++) {
-            if (word.charAt(i) == letter.charAt(0)) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-
-    public static void printHiddenWord(String word, List<String> foundLetters) {
-        for (int i = 0; i < word.length(); i++) {
-            String currentLetter = String.valueOf(word.charAt(i));
-            if (foundLetters.contains(currentLetter)) {
-                System.out.print(currentLetter);
+            // Inform the user if the letter was found
+            if (found) {
+                System.out.println("Richtig! Der Buchstabe " + guess + " ist im Wort.");
             } else {
-                System.out.print("_");
+                System.out.println("Leider falsch! Der Buchstabe " + guess + " ist nicht im Wort.");
             }
 
-            System.out.print(" ");
+            // Check if the word is fully guessed
+            isFinished = isWordGuessed(guessedArr);
 
+            if (isFinished) {
+                System.out.println("Herzlichen Glückwunsch! Du hast das Wort richtig erraten: " + word);
+            }
         }
     }
 
+    // Utility method to check if the word is fully guessed
+    private static boolean isWordGuessed(char[] guessedArr) {
+        for (char c : guessedArr) {
+            if (c == '*') {
+                return false;
+            }
+        }
+        return true;
+    }
 
+    // Utility method to print the current guessed state of the word
+    private static void printArray(char[] arr) {
+        for (char c : arr) {
+            System.out.print(c);
+        }
+        System.out.println();
+    }
 }
