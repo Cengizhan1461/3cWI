@@ -6,7 +6,7 @@ public class DasErsteObjekt {
 
         car c1 = new car();
         c1.brand = "Audi";
-        c1.fuelAmount= 9;
+        c1.fuelAmount= 50;
         c1.fuelConsumption = 5;
         c1.serialNumber= "A1234";
         c1.colour= "Black";
@@ -21,9 +21,13 @@ public class DasErsteObjekt {
         System.out.println(c1.brake);
         System.out.println(c1.tankVolume);
         c1.turboBoost();
-        c1.honk(1);
+        c1.honk(4);
         c1.getRemainingRange();
 
+
+        car c3 = new car(17, "Opel", "1234O");
+
+        System.out.println(c3.serialNumber);
 
 
 

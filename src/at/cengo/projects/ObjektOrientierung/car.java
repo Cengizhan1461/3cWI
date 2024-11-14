@@ -10,6 +10,15 @@ public class car {
     public String colour;
     public String brake;
     public int tankVolume;
+
+    public car(int fuelConsumption, String brand, String serialNumber){
+                this.fuelConsumption = fuelConsumption;
+                this.brand = brand;
+                this.serialNumber = serialNumber;
+    }
+
+
+
     public void turboBoost() {
         if (fuelAmount > 0.1 * tankVolume) {
             System.out.println("SuperBoostMode");
@@ -23,7 +32,6 @@ public class car {
         }
     }
     public void getRemainingRange() {
-        System.out.println((fuelAmount / fuelConsumption)*100);
+        System.out.println(fuelAmount / fuelConsumption);
     }
-
 }
