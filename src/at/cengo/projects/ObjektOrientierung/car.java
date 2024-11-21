@@ -8,17 +8,18 @@ public class car {
     private String brand;
     private String serialNumber;
     private String colour;
-    private String brake;
     private int tankVolume;
 
 
-    /*
-    public car(int fuelConsumption, String brand, String serialNumber){
+    public car(int fuelConsumption, String brand, String serialNumber, String colour, int tankVolume, int fuelAmount){
                 this.fuelConsumption = fuelConsumption;
                 this.brand = brand;
                 this.serialNumber = serialNumber;
+                this.colour = colour;
+                this.tankVolume = tankVolume;
+                this.fuelAmount = fuelAmount;
     }
-*/
+
 
 
     public void turboBoost() {
@@ -54,10 +55,6 @@ public class car {
         this.brand = brand;
     }
 
-    public void setBrake(String brake) {
-        this.brake = brake;
-    }
-
     public void setColour(String colour) {
         this.colour = colour;
     }
@@ -86,8 +83,8 @@ public class car {
         return tankVolume;
     }
 
-    public String getBrake() {
-        return brake;
+    public void doBrake() {
+        System.out.println("I am braking");
     }
 
     public String getColour() {
