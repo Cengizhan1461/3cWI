@@ -3,6 +3,8 @@ package at.cengo.projects.ObjektOrientierung;
 public class car {
     // Instanz / Gedächtnis
 
+
+    private Engine engine;
     private int fuelAmount;
     private int fuelConsumption;
     private String brand;
@@ -11,7 +13,8 @@ public class car {
     private int tankVolume;
 
 
-    public car(int fuelConsumption, String brand, String serialNumber, String colour, int tankVolume, int fuelAmount){
+    public car(Engine engine, int fuelConsumption, String brand, String serialNumber, String colour, int tankVolume, int fuelAmount){
+                this.engine = engine;
                 this.fuelConsumption = fuelConsumption;
                 this.brand = brand;
                 this.serialNumber = serialNumber;
@@ -31,7 +34,7 @@ public class car {
     }
     public void honk(int amountOfRepetitions) {
         for (int i = 0; i < amountOfRepetitions; i++) {
-            System.out.println("Tuuut");
+            System.out.println("Ich bin ein" + this.brand + "und habe die Farbe" + this.colour + " und habe" + this.engine + "ps");
         }
     }
     public void getRemainingRange() {

@@ -5,7 +5,11 @@ public class DasErsteObjekt {
     public static void main(String[] args) {
         int a = 7;
 
-        car c1 = new car(50, "Audi", "A1234", "Black", 55, 50);
+
+
+
+        Engine e1 = new Engine (149, Engine.TYPE.DIESEL);
+
 
         /*
         c1.setBrand("Audi");
