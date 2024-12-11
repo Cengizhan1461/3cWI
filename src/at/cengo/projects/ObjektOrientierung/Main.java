@@ -1,5 +1,4 @@
 package at.cengo.projects.ObjektOrientierung;
-import at.cengo.projects.ObjektOrientierung.Car;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,6 +23,9 @@ public class Main {
         Tires tire2 = new Tires(20,"Winter", 1.7, 2.5);
         Tires tire3 = new Tires(20,"Winter", 1.7, 2.8);
         Tires tire4 = new Tires(20,"Winter", 1.7, 2.8);
+
+        LightElement l1 = new LightElement("ABC", "white", 7);
+
 
         myCar.addTires(tire1);
         myCar.addTires(tire2);
