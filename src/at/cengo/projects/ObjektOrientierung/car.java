@@ -16,6 +16,9 @@ import java.util.List;
         private Engine engine;
         private List<RearMirror> mirrors;
         private List<Tires> tires = new ArrayList<>();
+        private List<LightElement> lightElements;
+        private List<Lamp> lamps;
+        
 
 
 
