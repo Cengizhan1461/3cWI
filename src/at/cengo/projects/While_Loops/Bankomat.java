@@ -39,7 +39,7 @@ public class Bankomat {
 
             if (Selection == 4){
 
-                System.out.println("Vorgang beendet?");
+                System.out.println("Vorgang beendet");
                 isFinished = true;
             }
 

@@ -18,6 +18,7 @@ import java.util.List;
         private List<Tires> tires = new ArrayList<>();
         private List<LightElement> lightElements;
         private List<Lamp> lamps;
+
         
 
 
@@ -144,6 +145,7 @@ import java.util.List;
                 this.fuelAmount = fuelAmount;
             }
         }
+
 
         public int getFuelCapacity() {
             return fuelCapacity;

@@ -6,7 +6,7 @@ public class Battery {
     public Battery(double initialCharge) {
         if (initialCharge < 0) {
             this.chargeLevel = 0;
-        } else if (initialCharge > 100) {
+        } else if (initialCharge >= 100) {
             this.chargeLevel = 100;
         } else {
             this.chargeLevel = initialCharge;

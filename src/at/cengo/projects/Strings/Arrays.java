@@ -18,6 +18,7 @@ public class Arrays {
 
         System.out.println("----------------");
 
+
         for (int row = 0; row < playground.length; row ++) {
             for (int col = 0; col < playground.length; col++){
                 System.out.print(playground[row][col] + " ");

@@ -12,8 +12,8 @@ public class Main {
         myCar.addMirror(r2);
 
         // Battery 1 und Battery 2
-        Battery battery1 = new Battery(80);
-        Battery battery2 = new Battery(60);
+        Battery battery1 = new Battery(70);
+        Battery battery2 = new Battery(80);
 
         // Erstellen der Fernbedienung mit den zwei Batterien
         RemoteControl remote = new RemoteControl(battery1, battery2);
@@ -32,6 +32,7 @@ public class Main {
         myCar.addTires(tire3);
         myCar.addTires(tire4);
 
+        System.out.println(l1.getName());
         System.out.println("Marke: " + myCar.getBrand());
         System.out.println("Modell: "+ myCar.getModell());
         System.out.println("Seriennummer: " + myCar.getSerialNumber());
