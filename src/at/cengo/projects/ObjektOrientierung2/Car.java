@@ -12,6 +12,8 @@ package at.cengo.projects.ObjektOrientierung2;
 // Danach wird er um 9.8 Prozent höher.
 
 
+import java.util.List;
+
 public class Car {
     private String colour;
     private int speed;
@@ -19,15 +21,17 @@ public class Car {
     private int fuelConsumption;
     private Manufacturer manufacturer;
     private Engine engine;
+    private List<LightElement> lightElements;
+    private List<Lamp> lamps;
 
 
-    public Car(String colour, int speed, int cost, int fuelConsumption, Manufacturer manufacturer, Engine engine) {
+    public Car(Engine engine, String colour, int speed, int cost, int fuelConsumption, Manufacturer manufacturer) {
+        this.engine = engine;
         this.colour = colour;
         this.speed = speed;
         this.cost = cost;
         this.fuelConsumption = fuelConsumption;
         this.manufacturer = manufacturer;
-        this.engine = engine;
     }
 
     public String getColour() {
