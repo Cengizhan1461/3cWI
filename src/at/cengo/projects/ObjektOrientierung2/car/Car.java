@@ -1,4 +1,4 @@
-package at.cengo.projects.ObjektOrientierung2;
+package at.cengo.projects.ObjektOrientierung2.car;
 
 
 //Ein Auto hat eine Farbe, eine Maximalgeschwindigkeit, einen Basispreis,
@@ -11,6 +11,9 @@ package at.cengo.projects.ObjektOrientierung2;
 //Der Benzinverbrauch entspricht die ersten 50.000km dem Basisverbrauch.
 // Danach wird er um 9.8 Prozent höher.
 
+
+import at.cengo.projects.ObjektOrientierung2.lamps.Lamp;
+import at.cengo.projects.ObjektOrientierung2.lamps.LightElement;
 
 import java.util.List;
 

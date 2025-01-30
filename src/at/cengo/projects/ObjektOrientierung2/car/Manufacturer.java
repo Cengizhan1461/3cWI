@@ -1,4 +1,4 @@
-package at.cengo.projects.ObjektOrientierung2;
+package at.cengo.projects.ObjektOrientierung2.car;
 
 
 //Der Hersteller hat einen Namen und ein Herkunftsland.

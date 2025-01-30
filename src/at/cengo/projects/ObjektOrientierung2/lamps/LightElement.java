@@ -1,4 +1,4 @@
-package at.cengo.projects.ObjektOrientierung2;
+package at.cengo.projects.ObjektOrientierung2.lamps;
 
 public class LightElement {
 

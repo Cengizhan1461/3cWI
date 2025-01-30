@@ -1,4 +1,4 @@
-package at.cengo.projects.ObjektOrientierung2;
+package at.cengo.projects.ObjektOrientierung2.car;
 
 public class Engine {
     public enum TYPE {DIESEL, BENZIN, ELEKTRO}
