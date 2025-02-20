@@ -1,4 +1,4 @@
-package at.cengo.projects.ObjektOrientierung2.Vererbung;
+package at.cengo.projects.ObjektOrientierung2.Vererbung_Override;
 
 
 public class Car {
