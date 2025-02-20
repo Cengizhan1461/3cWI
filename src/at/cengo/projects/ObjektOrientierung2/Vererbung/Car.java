@@ -15,11 +15,19 @@ public class Car {
 
 
 
+    public void drive(){
+        System.out.println("I am driving");
+    }
+
+    public void stop(){
+        System.out.println("I am breaking the car");
+    }
+
+
     public String getBrand(){return brand;}
     public void setBrand(String brand) {
         this.brand = brand;
     }
-
 
 
 

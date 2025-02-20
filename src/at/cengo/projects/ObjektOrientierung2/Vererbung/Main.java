@@ -12,6 +12,8 @@ public class Main  {
     Truck t1 = new Truck(engine, "blue", "Volvo", " trailer1");
 
         System.out.println(t1.getColour() +  t1.getTrailer());
+        t1.drive();
+        t1.stop();
 
     }
 }
